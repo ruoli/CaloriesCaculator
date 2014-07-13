@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+   <TabHost android:id="@+id/tabhost" android:layout_width="match_parent" android:layout_height="match_parent">
+         <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="match_parent" android:orientation="vertical">
+            <TabWidget android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@android:id/tabs"></TabWidget>
+            <FrameLayout android:layout_width="match_parent" android:id="@android:id/tabcontent" android:layout_height="wrap_content">
+               
+        <LinearLayout android:layout_width="match_parent" android:id="@+id/tabAdd" android:layout_height="match_parent" android:orientation="vertical">
+    				<TextView android:text="Adding more food to the database? Please enter a food name" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    				<EditText android:id="@+id/etAddFood" android:layout_height="wrap_content" android:layout_width="match_parent">
+    				</EditText>
+   				 <TextView android:text="Please enter the amount of calories food contains (cal)" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   				 <EditText android:inputType="number" android:id="@+id/etAddCalo" android:layout_height="wrap_content" android:layout_width="match_parent"></EditText>
+   				 <Button android:text="Add" android:id="@+id/bAdd" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    	</LinearLayout>
+    	
+    	<LinearLayout android:layout_width="match_parent" android:id="@+id/tabDele" android:layout_height="match_parent" android:orientation="vertical">
+ 			<TextView android:text="Deleting food's information? Please enter the food you want to remove" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   			 <EditText android:id="@+id/etFoodDele" android:layout_height="wrap_content" android:layout_width="match_parent">
+      			 </EditText>
+    		<Button android:text="Delete" android:id="@+id/bDele" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    	</LinearLayout>
+ 			
+ 		<LinearLayout android:layout_width="match_parent" android:id="@+id/tabUpdate" android:layout_height="match_parent" android:orientation="vertical">
+  			<TextView android:text="Updating food's information? Please enter the food you want to update" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    			<EditText android:id="@+id/etFoodNameUpdate" android:layout_height="wrap_content" android:layout_width="match_parent">
+    				</EditText>
+    		<TextView android:text="Please enter the calories of the food (cal)" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    			<EditText android:inputType="number" android:id="@+id/etFoodCaloUpdate" android:layout_height="wrap_content" android:layout_width="match_parent"></EditText>
+    		<TextView android:text="Please enter the food's ID" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>	
+    			<EditText android:inputType="number" android:id="@+id/etFoodIdUpdate" android:layout_height="wrap_content" android:layout_width="match_parent"></EditText>
+    				<Button android:id="@+id/bUpdate" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Update"></Button>
+    	</LinearLayout>
+    	
+    	<LinearLayout android:layout_width="match_parent" android:id="@+id/tabSearch" android:layout_height="match_parent" android:orientation="vertical">
+ 				<TextView android:text="Searching food's information? Please enter the food you want to search " android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   				 <EditText android:id="@+id/etSearch" android:layout_height="wrap_content" android:layout_width="match_parent">
+       				</EditText>
+   				 <Button android:text="Search" android:id="@+id/bSearch" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+   				 <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+    			 <TextView android:text="" android:id="@+id/tvFdN" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+   				 <TextView android:text="" android:id="@+id/tvCalo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+   				 </LinearLayout>
+    	</LinearLayout>
+    	
+    	<LinearLayout android:layout_width="match_parent" android:id="@+id/tabList" android:layout_height="match_parent" android:orientation="vertical">
+    		<TableLayout android:id="@+id/tableLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        		<TableRow>
+        			<TextView android:text="Food ID:"
+        			     android:layout_width="fill_parent" 
+         				    android:layout_height="fill_parent"
+          					   android:layout_weight="1"></TextView>
+          					   
+             		<TextView android:text="Food Name:"
+   						  android:layout_width="fill_parent"
+    					  android:layout_height="fill_parent"
+     					 	android:layout_weight="1"></TextView>
+            
+       			     <TextView android:text="Calori Contains (cal):"
+        			     android:layout_width="fill_parent" 
+         				    android:layout_height="fill_parent"
+          					   android:layout_weight="1"></TextView>
+       
+        		</TableRow>
+       		</TableLayout>
+    		
+    		
+
+	<ScrollView android:id="@+id/scrollView1"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+
+		<LinearLayout android:layout_width="match_parent" android:id="@+id/tabUpdate" android:layout_height="match_parent" android:orientation="horizontal">   		
+       		<TextView android:text="No data atm"
+    					android:id="@+id/SQLfid"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="1">
+    							 	</TextView>
+       
+       		<TextView android:text="No data atm"
+    					android:id="@+id/SQLfn"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="0.9">
+    							 	</TextView>
+    		<TextView android:text="No data atm"
+    					android:id="@+id/SQLcalo"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="0.8">
+    							 	</TextView>
+    							 	</LinearLayout>
+	</ScrollView>
+					 	
+    	
+    	
+    	</LinearLayout>
+ 		</FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="303dp" >
+
+        <LinearLayout android:layout_width="match_parent" android:id="@+id/tabList" android:layout_height="match_parent" android:orientation="vertical">
+    		<TableLayout android:id="@+id/tableLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        		<TableRow>
+        		    <TextView android:text="WEEK:"
+        			     android:layout_width="fill_parent" 
+         				    android:layout_height="fill_parent"
+          					   android:layout_weight="1"></TextView>
+        			<TextView android:text="DAY:"
+        			     android:layout_width="fill_parent" 
+         				    android:layout_height="fill_parent"
+          					   android:layout_weight="1"></TextView>
+          					   
+             		<TextView android:text="MYPLAN(CAL):"
+   						  android:layout_width="fill_parent"
+    					  android:layout_height="fill_parent"
+     					 	android:layout_weight="1"></TextView>
+            
+       			     <TextView android:text="ACTUAL TAKEN(CAL):"
+        			     android:layout_width="fill_parent" 
+         				    android:layout_height="fill_parent"
+          					   android:layout_weight="1"></TextView>
+       
+        		</TableRow>
+       		</TableLayout>
+    		
+    		<LinearLayout android:layout_width="match_parent" android:id="@+id/tabUpdate" android:layout_height="match_parent" android:orientation="horizontal">   		
+       		<TextView android:text="No data atm"
+    					android:id="@+id/tvOvWeek"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="1">
+    							 	</TextView>
+       
+       		<TextView android:text="No data atm"
+    					android:id="@+id/tvOvDay"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="0.9">
+    							 	</TextView>
+    		<TextView android:text="No data atm"
+    					android:id="@+id/tvOvPlan"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="0.8">
+    							 	</TextView>
+    		<TextView android:text="No data atm"
+    					android:id="@+id/tvOvTake"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="0.8">
+    							 	</TextView>
+    							 	</LinearLayout>
+    	
+    	
+    	</LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bVG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Chart" />
+
+    <Button
+        android:id="@+id/bReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+
+</LinearLayout>

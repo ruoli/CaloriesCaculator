@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    
+   
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Please enter the food you have taken in today"></TextView>
+    <EditText android:id="@+id/etEnterFood" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <requestFocus></requestFocus>
+    </EditText>
+    <Button android:text="I have eaten" android:id="@+id/bEnterFood" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    
+     <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Please enter your daily calories intake plan"></TextView>
+     <EditText android:inputType="number" android:id="@+id/etDayIntakePlan" android:layout_height="wrap_content" android:layout_width="match_parent"></EditText> 
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Is this the 1st, 2nd, 3td...or week? Enter a number, e.g. '2'"></TextView>
+     <EditText android:inputType="number" android:id="@+id/etWeekNo" android:layout_height="wrap_content" android:layout_width="match_parent"></EditText> 
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="What day is today? e.g. 'Mon, Tue, Wed...'"></TextView>
+     <EditText android:id="@+id/etWeekDay" android:layout_height="wrap_content" android:layout_width="match_parent"></EditText> 
+    
+    <Button android:text="Submit to Database" android:id="@+id/bSTB" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    
+    
+    
+    <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="wrap_content">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tvTodayTotal" android:text=""></TextView>
+    </LinearLayout>
+    		
+    		
+    		<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">   		
+       		<TextView android:text=""
+    					android:id="@+id/tvFNentered"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="1">
+    							 	</TextView>
+    		<TextView android:text=""
+    					android:id="@+id/tvShowContains"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="0.7">
+    							 	</TextView>
+       
+    		<TextView android:text=""
+    					android:id="@+id/tvFCentered"
+     						android:layout_width="fill_parent" 
+    							 android:layout_height="fill_parent"
+    							 	android:layout_weight="1">
+    							 	</TextView>
+    							 	</LinearLayout>
+    	
+    	
+    	
+</LinearLayout>
